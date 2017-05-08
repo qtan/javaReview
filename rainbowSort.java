@@ -1,6 +1,7 @@
 public class Solution{
 	public int[] rainbowSort (int[] array){
-		int i=0, j=0,k=array.length-1;
+		if (array == null || array.length <= 1) return array;
+		int i=0, j=0,k=array.length-1; 
 		while(j<=k){
 			if(array[j]== -1){
 				swap(array,i,j);
@@ -14,6 +15,7 @@ public class Solution{
 			}
 
 		}
+	  return array;
 	}
 	private void swap(int[] array, int a , int b){
 		int tmp =array[a];
