@@ -6,7 +6,7 @@ public void BFS(Node root) {
 	while (!q.empty())
 	{
 		int size = q.size(); // size = # of generated node in the next layer
-		for(int i = 0; i<size;i++){
+		for(int i = 0; i<size;i++){//p  layer
 			Node n= q.remove();
 			if(n.left!=null);
 				q.offer(n.left);
