@@ -1,4 +1,4 @@
-Public class QuickSort {
+public class QuickSort {
 	public int[] quickSort(int[] array){
 		if (array==null||array.length<=1){
 			return array;
@@ -25,13 +25,13 @@ Public class QuickSort {
 		int leftBound = left;
 		int rightBound =right-1;
 		while (leftBound <= rightBound){
-			if (array[leftBound]<pivot){
+			if (array0[leftBound]<pivot){
 				leftBound++;
 			}else if ( array[rightBound]>=pivot) {
 				rightBound--;
 				
 			}else{
-				swap(array,leftBound++,rightBound--)
+				swap(array,leftBound++,rightBound--);
 			}
 			
 
